@@ -16,6 +16,7 @@ public class Employe {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private String matricule;
     //@Column(name = "nom_employe") pour changer le nom de la colonne
     private String nom;
     private String prenom;

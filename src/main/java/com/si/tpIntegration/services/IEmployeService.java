@@ -10,4 +10,6 @@ public interface IEmployeService {
     public Employe saveEmploye(Employe employee);
     public Employe getOneEmployee(int id);
     public void deleteEmploye(int id);
+    public List<Employe> getAllEmployeBySex(String sex);
+    public String getEmployeAge(int id);
 }

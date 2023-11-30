@@ -38,6 +38,14 @@ public class EmployeController {
         return employeService.saveEmploye(employe);
     }
 
+    @GetMapping("/employes/sexe/{sexe}")
+    public List<Employe> getAllEmployeBySex(@PathVariable String sexe){
+        return employeService.getAllEmployeBySex(sexe);
+    }
 
+    @GetMapping("/employes/age/{id}")
+    public String getEmployeAge(@PathVariable int id){
+        return employeService.getEmployeAge(id);
+    }
 
 }
